@@ -7,7 +7,7 @@ import {Link} from "react-router-dom"
 export function ThreeDCardDemo({image}) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto xl:w-[30rem] h-auto rounded-xl p-6 border  ">
+      <CardBody className="bg-transparent relative group/card border border-gray-300/[0.5] w-auto xl:w-[30rem] h-auto rounded-xl p-6 ">
         <CardItem
           translateZ="50"
           className="text-xl font-bold text-neutral-600 dark:text-white"
@@ -30,7 +30,7 @@ export function ThreeDCardDemo({image}) {
             alt="thumbnail"
           />
         </CardItem>
-        <div className="flex justify-between items-center mt-20">
+        <div className="flex justify-between items-center mt-3">
           <CardItem
             translateZ={20}
             as={Link}

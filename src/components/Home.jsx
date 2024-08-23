@@ -1,11 +1,12 @@
 import React from 'react'
-import {GlobeDemo} from "../../UI/GlobeDemo"
-import { SparklesPreview } from '../../UI/SparklesPreview'
+import { ImagesSliderDemo } from '../../UI/ImagesSliderDemo'
 
 const Home = () => {
   return (
     <div>
-     <SparklesPreview></SparklesPreview>
+      <ImagesSliderDemo></ImagesSliderDemo>
+   
+ 
     </div>
   )
 }

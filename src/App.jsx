@@ -6,13 +6,13 @@ import Footer from './components/Footer';
 import RecentActivities from './components/RecentActivities';
 import Achievements from './components/Achievements';
 import TeamMembers from './components/TeamMembers';
-
+import { BackgroundBeamsDemo } from '../UI/BackgroundBeamsDemo';
 
   function App() {
     const router = createBrowserRouter([
       {
         path: "/",
-        element: <><Navbar/><Home /><Footer/></>,
+        element: <><Home /><Footer/></>,
       },
       {
         path: "/recentActivities",
@@ -29,9 +29,9 @@ import TeamMembers from './components/TeamMembers';
   
     ]);
     return (
-      <>
+      <BackgroundBeamsDemo>
       <RouterProvider router={router} />
-     </>
+    </BackgroundBeamsDemo>
     )
   }
   

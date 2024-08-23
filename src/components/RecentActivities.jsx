@@ -1,9 +1,12 @@
 import React from 'react'
+import { SparklesPreview } from '../../UI/SparklesPreview'
+import { TypewriterEffectSmoothDemo } from '../../UI/TypewriterEffectSmoothDemo'
 
 const RecentActivities = () => {
   return (
     <div>
-      I am recent Activities
+  <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo>
+ <SparklesPreview></SparklesPreview>
     </div>
   )
 }
