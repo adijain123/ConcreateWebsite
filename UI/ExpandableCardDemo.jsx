@@ -2,7 +2,7 @@
 
 import React, { useEffect, useId, useRef, useState } from "react"
 import { AnimatePresence, motion } from "framer-motion"
-import { useOutsideClick } from "./use-outside-click"
+import { useOutsideClick } from "../src/components/use-outside-click"
 
 export function ExpandableCardDemo() {
   const [active, setActive] = useState(null)

@@ -1,13 +1,15 @@
 import React from 'react'
 import { SparklesPreview } from '../../UI/SparklesPreview'
 import { TypewriterEffectSmoothDemo } from '../../UI/TypewriterEffectSmoothDemo'
-import { ExpandableCardDemo } from './ExpandableCardDemo'
+import { ExpandableCardDemo } from '../../UI/ExpandableCardDemo'
+import Activites from './Activites'
+
 const RecentActivities = () => {
   return (
     <div>
-  <TypewriterEffectSmoothDemo></TypewriterEffectSmoothDemo>
  <SparklesPreview></SparklesPreview>
- <ExpandableCardDemo></ExpandableCardDemo>
+ <Activites></Activites>
+ {/* <ExpandableCardDemo></ExpandableCardDemo> */}
     </div>
   )
 }

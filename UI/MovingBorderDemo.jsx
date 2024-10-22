@@ -2,14 +2,14 @@
 import React from "react"
 import { Button } from "./ui/moving-border"
 
-export function MovingBorderDemo() {
+export function MovingBorderDemo({text}) {
   return (
     <div>
       <Button
-        borderRadius="1.75rem"
-        className="bg-white dark:bg-slate-900 text-black dark:text-white border-neutral-200 dark:border-slate-800"
+        borderRadius="1.2rem"
+        className="bg-black text-yellow-200 border-neutral-200 dark:border-slate-800"
       >
-        Borders are cool
+        {text}
       </Button>
     </div>
   )

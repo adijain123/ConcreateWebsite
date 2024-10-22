@@ -1,54 +1,86 @@
-"use client"
+"use client";
 
-import React from "react"
-import { CardBody, CardContainer, CardItem } from "./ui/CardContainer"
-import {Link} from "react-router-dom"
+import React from "react";
+import { CardBody, CardContainer, CardItem } from "./ui/CardContainer";
 
-export function ThreeDCardDemo({image}) {
+export function ThreeDCardDemo({ image, name, position, insta, linkedin, email }) {
   return (
     <CardContainer className="inter-var">
-      <CardBody className="bg-transparent relative group/card border border-gray-300/[0.5] w-auto xl:w-[30rem] h-auto rounded-xl p-6 ">
+      <CardBody className="bg-black relative group/card border border-gray-200/[0.8] w-11/12 h-auto rounded-xl p-4">
         <CardItem
           translateZ="50"
-          className="text-xl font-bold text-neutral-600 dark:text-white"
+          className="text-lg font-bold text-neutral-600 dark:text-white"
         >
-          Make things float in air
+          {name}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
           className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
         >
-          Hover over this card to unleash the power of CSS perspective
+          {position}
         </CardItem>
-        <CardItem translateZ="100" className="w-full mt-4">
+        <CardItem translateZ="100" className="w-full mt-2">
           <img
             src={image}
-            height="1000"
-            width="1000"
-            className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+            height="250"
+            width="250"
+            className="h-60 w-60 object-cover rounded-xl group-hover/card:shadow-xl"
             alt="thumbnail"
           />
         </CardItem>
-        <div className="flex justify-between items-center mt-3">
-          <CardItem
-            translateZ={20}
-            as={Link}
-            href="https://twitter.com/mannupaaji"
-            target="__blank"
-            className="px-4 py-2 rounded-xl text-xs font-normal dark:text-white"
-          >
-            Try now →
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as="button"
-            className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-          >
-            Sign up
-          </CardItem>
+        <div className="flex items-center justify-end mt-3">
+          <span className="text-white text-base font-bold">Connect - </span>
+          <span className="inline-flex sm:mt-0 mt-4 justify-center sm:justify">
+            <a href={insta} target="_blank" className="ml-3 text-white">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <rect width={20} height={20} x={2} y={2} rx={5} ry={5} />
+                <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01" />
+              </svg>
+            </a>
+            <a href={linkedin} target="_blank" className="ml-3 text-white">
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={0}
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                />
+                <circle cx={4} cy={4} r={2} stroke="none" />
+              </svg>
+            </a>
+
+            <a href={`mailto:${email}`} className="ml-3 text-white">
+              <svg
+                fill="none"
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                className="w-6 h-6"
+                viewBox="0 0 24 24"
+              >
+                <rect width={20} height={16} x={2} y={4} rx={2} ry={2} />
+                <path d="M22 6L12 13 2 6" />
+              </svg>
+            </a>
+          </span>
         </div>
       </CardBody>
     </CardContainer>
-  )
+  );
 }

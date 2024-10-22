@@ -4,9 +4,9 @@ import { SparklesCore } from "./ui/sparkles"
 
 export function SparklesPreview() {
   return (
-    <div className="h-[10rem] w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md">
+    <div className="h-[10rem] w-full bg-transparent flex flex-col items-center justify-center overflow-hidden rounded-md pt-3">
       <h1 className="md:text-5xl text-3xl lg:text-5xl font-bold text-center text-white relative z-20">
-        Welcome to Concreate Club IIT Indore
+       Activities <span className="text-blue-500">Concreate Club,</span> IIT Indore
       </h1>
       <div className="w-[40rem] h-40 relative">
         {/* Gradients */}
@@ -26,7 +26,7 @@ export function SparklesPreview() {
         />
 
         {/* Radial Gradient to prevent sharp edges */}
-        <div className="absolute inset-0 w-full h-full bg-gray-950 [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
+        <div className="absolute inset-0 w-full h-full bg-black [mask-image:radial-gradient(350px_200px_at_top,transparent_20%,white)]"></div>
       </div>
     </div>
   )

@@ -7,6 +7,7 @@ import RecentActivities from './components/RecentActivities';
 import Achievements from './components/Achievements';
 import TeamMembers from './components/TeamMembers';
 import { BackgroundBeamsDemo } from '../UI/BackgroundBeamsDemo';
+import {GridBackgroundDemo} from '../UI/GridBackgroundDemo';
 
   function App() {
     const router = createBrowserRouter([
