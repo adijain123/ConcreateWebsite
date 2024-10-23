@@ -68,6 +68,14 @@ const teamMembers = [
     linkedin: "https://www.linkedin.com/in/nidarsana-m-07a111292",
     email: "ce230004031@iiti.ac.in"
   },
+  {
+    image: "/team/ChanduSri.jpg",
+    name: "Chandu Sri",
+    position: "Member",
+    insta: "https://www.instagram.com/chandusricheeduru/",
+    linkedin: "https://www.linkedin.com/in/cheeduru-chandusree-099201276/",
+    email: "ce230004013@iiti.ac.in"
+  },
   // Add more team members as needed
 ]
 

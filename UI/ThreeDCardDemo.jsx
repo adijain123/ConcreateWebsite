@@ -9,14 +9,14 @@ export function ThreeDCardDemo({ image, name, position, insta, linkedin, email }
       <CardBody className="bg-black relative group/card border border-gray-200/[0.8] w-11/12 h-auto rounded-xl p-4">
         <CardItem
           translateZ="50"
-          className="text-lg font-bold text-neutral-600 dark:text-white"
+          className="text-lg font-bold text-white"
         >
           {name}
         </CardItem>
         <CardItem
           as="p"
           translateZ="60"
-          className="text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300"
+          className="text-sm max-w-sm mt-2 text-neutral-300"
         >
           {position}
         </CardItem>
